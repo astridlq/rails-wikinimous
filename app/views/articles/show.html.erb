@@ -1,0 +1,10 @@
+<div class="article-info">
+  <h1><%= @articles.title %></h1>
+  <p><%= link_to "📖 Back", root_path, class: "options" %></p>
+  <p><%= link_to "🖋 Edit", edit_article_path(@articles), class: "options" %></p>
+  <p><%= link_to "🗑 Delete", article_path(@articles), class: "options", method: :delete, data: { confirm: "Are you sure?"} %></p>
+
+</div>
+<div class="container">
+  <p><%= @articles.content %></p>
+</div>
